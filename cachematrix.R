@@ -50,7 +50,7 @@ cacheSolve <- function(x, ...) {
 		return(inv)
 	}
 	mat <- x$get()
-	inv <- solve(mat)
+	inv <- solve(mat, ...)
 	x$setinv(inv)
 	inv
 }
